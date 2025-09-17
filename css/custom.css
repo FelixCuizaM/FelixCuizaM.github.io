@@ -1,0 +1,283 @@
+/*
+ * Version: 2.1.2
+ * File Description: Place here your custom CSS styles
+ */
+ .image1 {
+    background-image: url("../../Users/usuario/Desktop/Solverpro/Invitafy/template/images/wedding-banner.html");
+    width: 2800px;
+    height: 100vh;
+    
+    transform: translate3d(0, 0, 0);
+  
+    animation: slideshow 15s linear infinite;
+  }
+  
+  @keyframes slideshow {
+    0%    { -webkit-transform: translateX(0); }
+    100%  { -webkit-transform: translateX(-1400px); }
+  }
+
+  .bg-perso{
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    z-index: 4;
+    /*position: relative;*/
+    overflow: hidden;
+  }
+
+  /* Start: Google Maps Responsive */
+.map-responsive {
+  overflow:hidden;
+  padding-bottom:400px; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+/* End: Google Maps Responsive */
+
+@media only screen and (max-width: 600px) {
+  h1.logo-font.h1perso {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2.logo-font.h2perso {
+    font-size: 1.2rem;
+  }
+}
+
+/* PORTADA BG */
+.section-portada{
+  display: -ms-flexbox; 
+  display: flex; 
+  background-image: url(../images/portada_x2.webp);
+  background-position: 48% 50%; 
+  height:100vh; 
+  width: 100%; 
+  background-attachment: fixed; 
+  position: relative;
+}
+
+.section-portada::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-portada{
+    background-size: auto 100vh;
+    background-attachment: scroll;
+    background-image: url(../images/portada_x1.webp);
+  }
+}
+
+/* counter BG */
+.section-counter{
+  display: flex; 
+  background-image: url(../images/counter_x2.webp);
+  background-position: 50% 50%; 
+  height:100vh; 
+  width: 100%; 
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-counter::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-counter{
+    background-size: auto 100vh;
+    background-attachment: scroll;
+    background-image: url(../images/counter_x1.webp);
+  }
+}
+
+/* gifts BG */
+.section-gifts{
+  display: flex; 
+  background-image: url(../images/gifts_x2.html);
+  background-position: 70% 50%; 
+  height:100vh; 
+  width: 100%; 
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-gifts::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-gifts{
+    background-size: auto 100vh;
+    background-attachment: scroll;
+    background-image: url(../images/gifts_x1.html);
+  }
+}
+
+/* INSTAGRAM BG */
+.section-ig{
+  display: flex; 
+  background-image: url(../images/ig_x2.webp);
+  background-position: 58% 50%; 
+  height:100vh; 
+  width: 100%; 
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-ig::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-ig{
+    background-size: auto 100vh;
+    background-attachment: scroll;
+    background-image: url(../images/ig_x1.webp);
+  }
+}
+
+/* FINAL BG */
+.section-final{
+  display: flex; 
+  background-image: url(../images/final_x2.webp);
+  background-position: 47% 40%; 
+  height: 100vh; 
+  width: 100%; 
+  background-attachment: fixed;
+  position: relative;
+}
+
+.section-final::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+  .section-final{
+    background-size: auto 100vh;
+    background-attachment: scroll;
+    background-image: url(../images/final_x1.webp);
+  }
+}
+
+
+.countdown2_style{
+  font-size: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .countdown2_style{
+    font-size: 2rem;
+  }
+}
+
+.comillas{
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline-date-label{
+margin-bottom: 20px;
+margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blogpost{
+    margin-bottom: 50px;
+  }
+
+  .blogpost header{
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .timeline{
+    padding: 0 0;
+    margin-top: 10px;
+  }
+}
+
+
+/* MODAL MAPS */
+#mymap_church{
+  background: url(../images/map_church.webp); 
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 76.25%;
+}
+#mymap_church iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#mymap_salon{
+  background: url(../images/map_salon.webp); 
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 76.25%;
+}
+#mymap_salon iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.portada_custom{
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  text-transform: none;
+}
