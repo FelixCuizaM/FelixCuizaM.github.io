@@ -43,7 +43,9 @@
 let launchDate = new Date("Oct 04, 2025 16:00:00").getTime();
 
 // Setup Timer to tick every 1 second
+/*
 let inicio = setTimeout(tick, 1000);
+*/
 let timer = setInterval(tick, 1000);
 
 function tick () {
