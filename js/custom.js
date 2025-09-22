@@ -109,7 +109,7 @@ boton.addEventListener("click", function(){
 		v.play();
 		reproductor.classList.replace("fa-volume-up","fa-volume-off");
 		sound = true;
-    v.volume ="0.4"; 
+    v.volume = 0.4; 
 		} else {
 			console.log("Apagado");
 			v.pause();
@@ -119,7 +119,7 @@ boton.addEventListener("click", function(){
     });
 
       // Música
-      /*
+      
     let boton = document.querySelector(".reproductor");
     let audioEtiqueta = document.querySelector("audio");
 
@@ -129,9 +129,9 @@ boton.addEventListener("click", function(){
         audioEtiqueta.play()
         audioEtiqueta.volume =0.5;
     }, {once : true});
-    */
     
-    /*
+    
+    
       boton.addEventListener('mouseover', () => {
         if (statusMouse.innerHTML==="Desactivado"){
           audioEtiqueta.setAttribute("src", "images/cancion.mp3")
@@ -141,7 +141,7 @@ boton.addEventListener("click", function(){
           console.log(statusMouse.innerHTML);
         }
       }, {once : true});
-    */
+    
 
     
 
